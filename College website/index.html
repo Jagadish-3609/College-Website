@@ -6,6 +6,20 @@
     <title>Andhra Loyola Institute of Engineering and Technology</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 400px;
+            width: 100%;
+        }
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,7 +59,6 @@
                 <li>State-of-the-art labs</li>
                 <li>Well-stocked library</li>
                 <li>Sports facilities</li>
-                <li>Cafeteria</li>
                 <li>Hostel accommodations</li>
             </ul>
             <div class="facilities-images">
@@ -66,10 +79,12 @@
 
         <section class="location">
             <h2>Our Location</h2>
-            <div class="map">
-                <!-- Embed a map here or provide a link to a map service -->
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Andhra%20Loyola%20Institute%20of%20Engineering%20and%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
             </div>
-            <p>Institute Address</p>
+            <p>Institute Address: Andhra Loyola Institute of Engineering and Technology, Vijayawada, Andhra Pradesh</p>
         </section>
     </main>
 
